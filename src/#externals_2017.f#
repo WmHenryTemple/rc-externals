@@ -17299,11 +17299,11 @@ C         WRITE(*,'('' WARNING[F1990]: OUTSIDE RECOMMENDED RANGE.'')')
 !                                                                               
 ! The three model forms are given by:                                           
 !                                                                               
-!     R_A = A(1)/LOG(Q2/.04)*FAC + A(2)/[Q2„4+A(3)„4]„.25 ;                     
+!     R_A = A(1)/LOG(Q2/.04)*FAC + A(2)/[Q2√£4+A(3)√£4]√£.25 ;                     
 !     R_B = B(1)/LOG(Q2/.04)*FAC + B(2)/Q2 + B(3)/(Q2**2+.3**2) ;               
-!     R_C = C(1)/LOG(Q2/.04)*FAC + C(2)/[(Q2-Q2thr)„2+C(3)„2]„.5 ,              
-!                               ...where Q2thr = 5(1-X)„5 ;                     
-!           where FAC = 1+12[Q2/(1+Q2)][.125„2/(.125„2+x„2)] gives the          
+!     R_C = C(1)/LOG(Q2/.04)*FAC + C(2)/[(Q2-Q2thr)√£2+C(3)√£2]√£.5 ,              
+!                               ...where Q2thr = 5(1-X)√£5 ;                     
+!           where FAC = 1+12[Q2/(1+Q2)][.125√£2/(.125√£2+x√£2)] gives the          
 !           x-dependence of the logarithmic part in order to match Rqcd         
 !           at high Q2.                                                         
 !                                                                               
@@ -17330,7 +17330,7 @@ C         WRITE(*,'('' WARNING[F1990]: OUTSIDE RECOMMENDED RANGE.'')')
 !                                                                               
 ! and the total error is returned by the program:                               
 !                                                                               
-!     DR = is the total uncertainty in R, DR = sqrt(D1„2+D2„2+D3„2).            
+!     DR = is the total uncertainty in R, DR = sqrt(D1√£2+D2√£2+D3√£2).            
 !          DR is my best estimate of how well we have measured R.  At           
 !          high Q2, where R is small, DR is typically larger than R.  If        
 !          you have faith in QCD, then, since R1990 = Rqcd at high Q2,          
